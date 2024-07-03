@@ -1,81 +1,81 @@
 export default [
   {
-    name: "Blog Title",
-    desc: "An Ai Tool that generates blog titles based on your blog information",
+    name: "Título do Blog",
+    desc: "Uma ferramenta de IA que gera títulos de blogs com base nas informações do seu blog",
     category: "Blog",
     icon: "https://cdn-icons-png.flaticon.com/128/9521/9521706.png",
     aiPrompt:
-      "Give me 5 blog topic ideas in bullet points based on the given niche topic and give me the result in Rich Text Editor form",
-    slug: "generate-blog-title",
+      "Dê-me 5 ideias de tópicos para blog em forma de lista com marcadores, com base no nicho fornecido, e apresente o resultado em formato de Editor de Texto Rico",
+    slug: "gerar-titulo-de-blog",
     form: [
       {
-        label: "Enter your blog niche",
+        label: "Digite o nicho do seu blog",
         field: "input",
         name: "niche",
         required: true,
       },
       {
-        label: "Enter blog outline",
+        label: "Digite o esboço do blog",
         field: "textarea",
         name: "outline",
       },
     ],
   },
   {
-    name: "Product Description",
-    desc: "An AI Tool that generates product descriptions for your e-commerce site",
+    name: "Descrição do Produto",
+    desc: "Uma ferramenta de IA que gera descrições de produtos para o seu site de e-commerce",
     category: "E-commerce",
     icon: "https://cdn-icons-png.flaticon.com/128/9079/9079748.png",
     aiPrompt:
-      "Generate a compelling product description based on the given product details and features",
-    slug: "generate-product-description",
+      "Gere uma descrição de produto atraente com base nos detalhes e características fornecidos",
+    slug: "gerar-descricao-de-produto",
     form: [
       {
-        label: "Enter product name",
+        label: "Digite o nome do produto",
         field: "input",
         name: "productName",
         required: true,
       },
       {
-        label: "Enter product features",
+        label: "Digite as características do produto",
         field: "textarea",
         name: "features",
       },
     ],
   },
   {
-    name: "Social Media Post",
-    desc: "An AI Tool that creates engaging social media posts",
-    category: "Social Media",
+    name: "Postagem em Mídia Social",
+    desc: "Uma ferramenta de IA que cria postagens envolventes para mídias sociais",
+    category: "Mídia Social",
     icon: "https://cdn-icons-png.flaticon.com/128/124/124010.png",
     aiPrompt:
-      "Create a catchy and engaging social media post based on the given topic and audience",
-    slug: "generate-social-media-post",
+      "Crie uma postagem envolvente e atraente para mídias sociais com base no tópico e no público-alvo fornecidos",
+    slug: "gerar-postagem-em-midia-social",
     form: [
       {
-        label: "Enter topic",
+        label: "Digite o tópico",
         field: "input",
         name: "topic",
         required: true,
       },
       {
-        label: "Enter target audience",
+        label: "Digite o público-alvo",
         field: "textarea",
         name: "audience",
       },
     ],
   },
   {
-    name: "SEO Meta Description",
-    desc: "An AI Tool that generates SEO-friendly meta descriptions for your web pages",
+    name: "Meta Descrição de SEO",
+    desc: "Uma ferramenta de IA que gera meta descrições otimizadas para SEO para suas páginas da web",
     category: "SEO",
     icon: "https://cdn-icons-png.flaticon.com/128/3523/3523063.png",
     aiPrompt:
-      "Generate an SEO-friendly meta description for the given webpage content",
-    slug: "generate-seo-meta-description",
+      "Gere uma meta descrição otimizada para SEO com base no conteúdo da página fornecido",
+    slug: "gerar-meta-descricao-seo",
     form: [
       {
-        label: "Enter webpage content summary",
+        label: "Digite o resumo do conteúdo da página",
         field: "textarea",
         name: "contentSummary",
         required: true,
@@ -83,16 +83,16 @@ export default [
     ],
   },
   {
-    name: "Email Subject Line",
-    desc: "An AI Tool that generates catchy email subject lines",
+    name: "Linha de Assunto do Email",
+    desc: "Uma ferramenta de IA que gera linhas de assunto atraentes para emails",
     category: "Email Marketing",
     icon: "https://cdn-icons-png.flaticon.com/128/732/732200.png",
     aiPrompt:
-      "Generate a catchy and engaging email subject line based on the given email content",
-    slug: "generate-email-subject-line",
+      "Gere uma linha de assunto atraente e envolvente para email com base no conteúdo do email fornecido",
+    slug: "gerar-linha-de-assunto-email",
     form: [
       {
-        label: "Enter email content",
+        label: "Digite o conteúdo do email",
         field: "textarea",
         name: "emailContent",
         required: true,
@@ -100,16 +100,16 @@ export default [
     ],
   },
   {
-    name: "Ad Copy",
-    desc: "An AI Tool that creates compelling ad copy for your marketing campaigns",
-    category: "Advertising",
+    name: "Texto do Anúncio",
+    desc: "Uma ferramenta de IA que cria textos de anúncio atraentes para suas campanhas de marketing",
+    category: "Publicidade",
     icon: "https://cdn-icons-png.flaticon.com/128/2983/2983788.png",
     aiPrompt:
-      "Generate a compelling ad copy based on the given product or service details",
-    slug: "generate-ad-copy",
+      "Gere um texto de anúncio atraente com base nos detalhes do produto ou serviço fornecidos",
+    slug: "gerar-texto-de-anuncio",
     form: [
       {
-        label: "Enter product/service details",
+        label: "Digite os detalhes do produto/serviço",
         field: "textarea",
         name: "details",
         required: true,
@@ -117,38 +117,38 @@ export default [
     ],
   },
   {
-    name: "Landing Page Headline",
-    desc: "An AI Tool that generates attention-grabbing headlines for your landing pages",
-    category: "Web Development",
+    name: "Título da Página de Destino",
+    desc: "Uma ferramenta de IA que gera títulos chamativos para suas páginas de destino",
+    category: "Desenvolvimento Web",
     icon: "https://cdn-icons-png.flaticon.com/128/3059/3059940.png",
     aiPrompt:
-      "Generate an attention-grabbing headline for a landing page based on the given page content and target audience",
-    slug: "generate-landing-page-headline",
+      "Gere um título chamativo para uma página de destino com base no conteúdo da página e no público-alvo fornecidos",
+    slug: "gerar-titulo-pagina-de-destino",
     form: [
       {
-        label: "Enter page content summary",
+        label: "Digite o resumo do conteúdo da página",
         field: "textarea",
         name: "pageContent",
         required: true,
       },
       {
-        label: "Enter target audience",
+        label: "Digite o público-alvo",
         field: "textarea",
         name: "audience",
       },
     ],
   },
   {
-    name: "YouTube Video Title",
-    desc: "An AI Tool that generates catchy titles for your YouTube videos",
-    category: "Video Content",
+    name: "Título de Vídeo do YouTube",
+    desc: "Uma ferramenta de IA que gera títulos atraentes para seus vídeos do YouTube",
+    category: "Conteúdo em Vídeo",
     icon: "https://cdn-icons-png.flaticon.com/128/1384/1384060.png",
     aiPrompt:
-      "Generate a catchy and SEO-friendly title for a YouTube video based on the given video content",
-    slug: "generate-youtube-video-title",
+      "Gere um título atraente e otimizado para SEO para um vídeo do YouTube com base na descrição do vídeo fornecida",
+    slug: "gerar-titulo-de-video-youtube",
     form: [
       {
-        label: "Enter video content description",
+        label: "Digite a descrição do conteúdo do vídeo",
         field: "textarea",
         name: "videoDescription",
         required: true,

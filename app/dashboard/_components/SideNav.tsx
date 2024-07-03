@@ -10,22 +10,22 @@ import UsageTrack from "./UsageTrack";
 function SideNav() {
   const MenuList = [
     {
-      name: "Home",
+      name: "Início",
       icon: Home,
       path: "/dashboard",
     },
     {
-      name: "History",
+      name: "Salvos",
       icon: FileClock,
       path: "/dashboard/history",
     },
     {
-      name: "Billing",
+      name: "Pagamentos",
       icon: WalletCards,
       path: "/dashboard/billing",
     },
     {
-      name: "Setting",
+      name: "Configurações",
       icon: Settings,
       path: "/dashboard/setting",
     },
@@ -61,9 +61,7 @@ function SideNav() {
         })}
       </div>
 
-      <div className="absolute bottom-10 left-0 w-full">
-       
-      </div>
+      <div className="absolute bottom-10 left-0 w-full"></div>
     </div>
   );
 }

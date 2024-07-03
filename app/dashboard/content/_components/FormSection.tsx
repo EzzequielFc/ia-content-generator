@@ -64,7 +64,7 @@ function FormSection({
           {loading ? (
             <Loader2Icon className="animate-spin" />
           ) : (
-            "Generate Content"
+            "Gerar conteúdo"
           )}
         </Button>
       </form>

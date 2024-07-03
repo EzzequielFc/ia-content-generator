@@ -64,7 +64,7 @@ function CreateNewContent({ params }: CreateNewContentProps) {
       <Link href={"/dashboard"}>
         <Button>
           <ArrowLeft />
-          Back
+          Voltar
         </Button>
       </Link>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 py-5">

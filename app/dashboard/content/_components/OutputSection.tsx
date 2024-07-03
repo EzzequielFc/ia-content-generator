@@ -21,7 +21,7 @@ function OutputSection({ aiOutput }: OutputSectionProps) {
   return (
     <div className="bg-white shadow-lg border">
       <div className="flex justify-between items-center p-5">
-        <h2 className="font-bold">Your Result</h2>
+        <h2 className="font-bold">Seu resultado</h2>
         <Button className="gap-2">
           <Copy className="w-4 h-4" />
           Copy
