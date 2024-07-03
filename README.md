@@ -24,8 +24,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[Google Generative AI](https://developers.google.com/generative-ai)**
 
 <p align="center">       
-	
-	<img src="URL_DA_IMAGEM" width="100%">
+	<img src="https://github.com/EzzequielFc/ia-content-generator/assets/93431754/31ef0dd7-9ac7-4616-b651-96cfd879e7e1" width="100%">
+	<img src="https://github.com/EzzequielFc/ia-content-generator/assets/93431754/cd0e3d0f-1ce7-4bbb-b898-762306c5fc06" width="100%">
+	<img src="https://github.com/EzzequielFc/ia-content-generator/assets/93431754/bbf6fe56-466c-4305-a378-30d2536abb2b" width="100%">
 </p>  
 
 
