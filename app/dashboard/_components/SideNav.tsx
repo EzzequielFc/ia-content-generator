@@ -4,6 +4,8 @@ import React, { useEffect } from "react";
 import { FileClock, Home, Settings, WalletCards } from "lucide-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import UsegaTrack from "./UsageTrack";
+import UsageTrack from "./UsageTrack";
 
 function SideNav() {
   const MenuList = [
@@ -36,7 +38,7 @@ function SideNav() {
   }, []);
 
   return (
-    <div className="h-screen p-5 shadow-sm border bg-white">
+    <div className="h-screen p-5 shadow-sm border bg-white relative">
       <div className="flex justify-center">
         <Image src={"/logo.svg"} alt="logo" width={120} height={100} />
       </div>
@@ -57,6 +59,10 @@ function SideNav() {
             </div>
           );
         })}
+      </div>
+
+      <div className="absolute bottom-10 left-0 w-full">
+       
       </div>
     </div>
   );
