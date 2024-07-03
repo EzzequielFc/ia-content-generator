@@ -9,6 +9,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { chatSession } from "@/utils/AiModal";
+import { db } from "@/utils/db";
+import { AiOutput } from "@/utils/schema";
+import { useUser } from "@clerk/nextjs";
+import moment from "moment";
 
 interface CreateNewContentProps {
   params: {
@@ -22,6 +26,7 @@ function CreateNewContent({ params }: CreateNewContentProps) {
   );
   const [loading, setLoading] = useState(false);
   const [aiOutput, setAiOutput] = useState<string>("");
+  const { user } = useUser();
 
   const GenerateAIContent = async (formData: any) => {
     setLoading(true);
@@ -32,9 +37,26 @@ function CreateNewContent({ params }: CreateNewContentProps) {
 
     const result = await chatSession.sendMessage(FinalAIPrompt);
 
-    setLoading(false);
-
     setAiOutput(result.response.text());
+
+    await SaveInDB(
+      JSON.stringify(formData),
+      selectedTemplate?.slug,
+      result?.response.text()
+    );
+
+    setLoading(false);
+  };
+
+  const SaveInDB = async (formData: any, slug: any, aiResp: string) => {
+    const result = await db.insert(AiOutput).values({
+      formData: formData,
+      templateSlug: slug,
+      aiResponse: aiResp,
+      createdBy: user?.primaryEmailAddress?.emailAddress || "",
+      createdAt: moment().format("DD/MM/yyyy"),
+    });
+
   };
 
   return (
@@ -53,7 +75,7 @@ function CreateNewContent({ params }: CreateNewContentProps) {
         />
 
         <div className="col-span-2">
-          <OutputSection aiOutput={aiOutput}/>
+          <OutputSection aiOutput={aiOutput} />
         </div>
       </div>
     </div>
